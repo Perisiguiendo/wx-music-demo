@@ -1,21 +1,105 @@
 /**index.wxss**/
-.userinfo {
+
+/* 轮播图 */
+
+.banner {
+  width: 100%;
+  height: 300rpx;
+}
+
+.banner image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 图标导航区域 */
+
+.nav-container {
+  display: flex;
+}
+
+.nav-container .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 20%;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.nav-item .iconfont {
+  width: 100rpx;
+  height: 100rpx;
+  background: #d43c33;
+  color: white;
   border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  margin: 20rpx 0;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.nav-item text:not(.iconfont) {
+  font-size: 26rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+/* 推荐歌曲 */
+
+.recommond-container {
+  padding: 0 20rpx;
+}
+
+.recommond-container .header {
+  margin-bottom: 20rpx;
+}
+
+.recommond-container .header .title {
+  font-size: 26rpx;
+  line-height: 80rpx;
+  color: #666;
+}
+
+.recommond-container .header view {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35rpx;
+}
+
+.more {
+  font-size: 26rpx;
+  padding: 10rpx 20rpx;
+  border: 1px solid #333;
+  border-radius: 30rpx;
+}
+
+/* 推荐歌曲内容区 */
+
+.scroll-container {
+  display: flex;
+}
+
+.scroll-item {
+  width: 200rpx;
+  margin-right: 20rpx;
+  font-size: 26rpx;
+}
+
+.scroll-item image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.scroll-item text {
+  /* 单行文本溢出隐藏 */
+  /* display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  /* 多行文本溢出隐藏 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*设置对其模式*/
+  -webkit-box-orient: vertical;
+  /*设置行数*/
+  -webkit-line-clamp: 2;
 }

@@ -3,14 +3,8 @@
   <!-- 轮播图区域 -->
   <swiper class="banner" indicator-dots="true" indicator-color="ivory" indicator-active-color="#d43c33" autoplay
     circular>
-    <swiper-item>
-      <image src="../../static/images/swipe/109951166169685296.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="../../static/images/swipe/109951166169690858.jpg"></image>
-    </swiper-item>
-    <swiper-item>
-      <image src="../../static/images/swipe/109951166169693900.jpg"></image>
+    <swiper-item wx:for="{{bannerList}}" wx:key="bannerId">
+      <image src="{{item.pic}}"></image>
     </swiper-item>
   </swiper>
 
@@ -48,70 +42,10 @@
       </view>
     </view>
     <!-- 内容区 -->
-    <!-- <view class="scroll-container">
-      <srcoll-view class="recommend-scroll" enable-flex scroll-x="true">
-        <view class="scroll-item">
-          <image class="" src="../../static/images/recommond/109951166169614810.jpg"></image>
-          <text>大数据开发和快速实际上的话减肥还是开发</text>
-        </view>
-        <view class="scroll-item">
-          <image class="" src="../../static/images/recommond/109951166169614810.jpg"></image>
-          <text>的事发生发射点</text>
-        </view>
-        <view class="scroll-item">
-          <image class="" src="../../static/images/recommond/109951166169614810.jpg"></image>
-          <text>士大夫士大夫士大夫但是</text>
-        </view>
-        <view class="scroll-item">
-          <image class="" src="../../static/images/recommond/109951166169614810.jpg"></image>
-          <text>十分惊讶万分看完</text>
-        </view>
-        <view class="scroll-item">
-          <image class="" src="../../static/images/recommond/109951166169614810.jpg"></image>
-          <text>为我回家而非回家</text>
-        </view>
-      </srcoll-view>
-    </view> -->
     <scroll-view class="scroll-container" enable-flex scroll-x>
       <view class="scroll-item">
         <image src='../../static/images/recommond/109951166169614810.jpg' />
         <text>大数据开发和快速实际上的话减肥还是开发</text>
-      </view>
-      <view class="scroll-item">
-        <image src='../../static/images/recommond/109951166169614810.jpg' />
-        <text>大数据开发和快速实际上的</text>
-      </view>
-      <view class="scroll-item">
-        <image src='../../static/images/recommond/109951166169614810.jpg' />
-        <text>大数际上的话减肥还是开发</text>
-      </view>
-      <view class="scroll-item">
-        <image src='../../static/images/recommond/109951166169614810.jpg' />
-        <text>大数际上的话</text>
-      </view>
-      <view class="scroll-item">
-        <image src='../../static/images/recommond/109951166169614810.jpg' />
-        <text>迪斯科解放还是快点发货快递是</text>
-      </view>
-      <view class="scroll-item">
-        <image src='../../static/images/recommond/109951166169614810.jpg' />
-        <text>大数据开发和快速实际上的话减肥还是开发</text>
-      </view>
-      <view class="scroll-item">
-        <image src='../../static/images/recommond/109951166169614810.jpg' />
-        <text>大数据开发和快速实际上的</text>
-      </view>
-      <view class="scroll-item">
-        <image src='../../static/images/recommond/109951166169614810.jpg' />
-        <text>大数际上的话减肥还是开发</text>
-      </view>
-      <view class="scroll-item">
-        <image src='../../static/images/recommond/109951166169614810.jpg' />
-        <text>大数际上的话</text>
-      </view>
-      <view class="scroll-item">
-        <image src='../../static/images/recommond/109951166169614810.jpg' />
-        <text>迪斯科解放还是快点发货快递是</text>
       </view>
     </scroll-view>
 

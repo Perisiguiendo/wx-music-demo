@@ -1,3 +1,4 @@
+import request from "../../utils/request"
 
 /**
  * index.js
@@ -8,14 +9,18 @@ Page({
    * 页面的初始数据
    */
   data: {
+    bannerList: [], // 轮播图数组数据
 
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: async function (options) {
+    let bannerListData = await request('/banner', {type: 2});
+    this.setData({
+      bannerList: bannerListData.banners,
+    })
   },
 
   /**

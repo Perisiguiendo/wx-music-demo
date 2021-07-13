@@ -1,6 +1,6 @@
 /**app.wxss**/
 /* 公共样式  */
 @import "./static/iconfont/iconfont.wxss"
-Page {
+page {
   height: 100%;
 }
